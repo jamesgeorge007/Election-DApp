@@ -19,12 +19,16 @@ contract Election {
         addCandidate("Candidate-2");
     }
 
-    function addCandidate (string _name) private{
+    function addCandidate (string _name) private {
         candidatesCount ++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
 
-    function vote (uint _candidateId) public{
+    function vote (uint _candidateId) public {
+        require(!voters[msg.sender]);
+
+        require(_candidateId > 0 && _candidateId <= candidatesCount);
+
         voters[msg.sender] = true;
         candidates[_candidateId].voteCount ++;
 
