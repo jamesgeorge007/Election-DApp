@@ -1,3 +1,6 @@
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+
 <h1 align="center">Vote-App</h1>
 
 This is a D-App (De-centralised application) on top of Ethereum Blockchain(EVM - Ethereum Virtual Machine) which eases the task of conducting elections :smile:
