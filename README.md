@@ -29,3 +29,6 @@ Solidity is a contract-oriented programming language for writing smart contracts
 * Run ```npm run dev``` to launch the app.
 > Make sure Ganache is running.
 
+## License
+
+> GNU General Public License v3.0
